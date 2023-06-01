@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pokemon-django"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "pokemon_django"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^4.2.1"
+djangorestframework = "^3.14.0"
+django-filter = "^23.2"
+requests = "^2.31.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
